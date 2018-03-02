@@ -137,28 +137,28 @@ $row3= mysqli_fetch_assoc($querys);
 	<aside id="fh5co-hero" class="js-fullheight">
 		<div class="flexslider js-fullheight">
 			<ul class="slides">
-		   	<li style="background-image: url(images/.jpg);">
+		   	<li style="background-image: url(images/one.jpg);">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="col-md-12 col-md-offset-0 text-center slider-text">
 		   				<div class="slider-text-inner js-fullheight">
 		   					<div class="desc">
-		   						<p><span>Bora Hotel</span></p>
-		   						<h2>Reserve Room for Family Vacation</h2>
+		   						<p><span>Income Outcome</span></p>
+		   						<h2>For You</h2>
 			   					
 		   					</div>
 		   				</div>
 		   			</div>
 		   		</div>
 		   	</li>
-		   	<li style="background-image: url(images/.jpg);">
+		   	<li style="background-image: url(images/two.jpg);">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="col-md-12 col-md-offset-0 text-center slider-text">
 		   				<div class="slider-text-inner js-fullheight">
 		   					<div class="desc">
-		   						<p><span>Deluxe Hotel</span></p>
-		   						<h2>Make Your Vacation Comfortable</h2>
+		   						<p><span>รายรับ รายจ่าย</span></p>
+		   						<h2>เพื่อคุณ</h2>
 			   				
 		   					</div>
 		   				</div>
