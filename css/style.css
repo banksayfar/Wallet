@@ -7335,7 +7335,7 @@ button.close {
 }
 /* =======================================================
 *
-*   Template Style 
+*   Template Style
 *   Edit this section
 *
 * ======================================================= */
@@ -7405,7 +7405,7 @@ figure {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
-  border-radius: 2px;
+  border-radius: 40px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
