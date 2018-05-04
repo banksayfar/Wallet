@@ -46,12 +46,12 @@ $row3= mysqli_fetch_assoc($querys);
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
 	<meta name="author" content="FREEHTML5.CO" />
 
-  <!-- 
+  <!--
 	//////////////////////////////////////////////////////
 
-	FREE HTML5 TEMPLATE 
+	FREE HTML5 TEMPLATE
 	DESIGNED & DEVELOPED by FREEHTML5.CO
-		
+
 	Website: 		http://freehtml5.co/
 	Email: 			info@freehtml5.co
 	Twitter: 		http://twitter.com/fh5co
@@ -95,7 +95,7 @@ $row3= mysqli_fetch_assoc($querys);
 	<link rel="stylesheet" href="css/icomoon.css">
 	<!-- Flexslider  -->
 	<link rel="stylesheet" href="css/flexslider.css">
-	
+
 	<!-- Style -->
 	<link rel="stylesheet" href="css/style.css">
 
@@ -122,7 +122,7 @@ $row3= mysqli_fetch_assoc($querys);
 							<li><a class="active" href="index.html"></a></li>
 							<li>
 								<a href="#" class="fh5co-sub-ddown"></a>
-								
+
 							<li><a href="#"></a></li>
 							<li><a class="action TEAM"></a></li>
 							<li><a href="logout.php" >LOGOUT</a></li>
@@ -131,7 +131,7 @@ $row3= mysqli_fetch_assoc($querys);
 				</div>
 			</div>
 		</header>
-		
+
 	</div>
 	<!-- end:fh5co-header -->
 	<aside id="fh5co-hero" class="js-fullheight">
@@ -145,7 +145,7 @@ $row3= mysqli_fetch_assoc($querys);
 		   					<div class="desc">
 		   						<p><span>Income Outcome</span></p>
 		   						<h2>For You</h2>
-			   					
+
 		   					</div>
 		   				</div>
 		   			</div>
@@ -159,14 +159,14 @@ $row3= mysqli_fetch_assoc($querys);
 		   					<div class="desc">
 		   						<p><span>รายรับ รายจ่าย</span></p>
 		   						<h2>เพื่อคุณ</h2>
-			   				
+
 		   					</div>
 		   				</div>
 		   			</div>
 		   		</div>
 		   	</li>
-		   
-		   	
+
+
 		  	</ul>
 	  	</div>
 	</aside>
@@ -181,8 +181,8 @@ $row3= mysqli_fetch_assoc($querys);
 							<input type="hidden" name="id" value = <?= $id?>>
 							<section >
 								<select class="cs-select cs-skin-border" id="type" name="type">
-									
-									
+
+
 									<option value="1" >รายรับทั่วไป</option>
                       				<option value="2">เงินเดือน</option>
                       				<option value="3">รายได้รายวัน</option>
@@ -202,21 +202,21 @@ $row3= mysqli_fetch_assoc($querys);
 							</div>
 						</div>
 
-					
+
 
 						<div class="a-col action" style="margin-top: 5px;">
 						<button type="submit" class="btn btn-success">
 								<span>Check</span>
-								
+
 							</button>
 						</div>
 					</form>
-					  <form action="phplib/addOutcome.php" method="POST"> 
+					  <form action="phplib/addOutcome.php" method="POST">
 						<div class="a-col">
 							 <input type="hidden" name="id" value = <?= $id?>>
 							<section>
 								<select class="cs-select cs-skin-border"  id="type" name="type">
-									
+
 									 <option value="1">รายจ่ายทั่วไป</option>
                           			 <option value="2">ค่าอาหารเครื่องดื่ม</option>
                          			 <option value="3">สินค้าจิปาถะ</option>
@@ -236,7 +236,7 @@ $row3= mysqli_fetch_assoc($querys);
 							</div>
 						</div>
 
-					
+
 
 						<div class="a-col action">
 						<button type="submit" class="btn btn-success">
@@ -248,11 +248,11 @@ $row3= mysqli_fetch_assoc($querys);
 			</div>
 		</div>
 	</div>
-	
+
 	<div id="fh5co-counter-section" class="fh5co-counters">
 		<div class="container">
 			<div class="row">
-				
+
 				<div class="col-md-3 text-center">
 					<span class="fh5co-counter js-counter" data-from="0" data-to="<?php echo $rows['money']?>" data-speed="5000" data-refresh-interval="50"></span>
 					<span class="fh5co-counter-label">INCOME</span>
@@ -273,7 +273,7 @@ $row3= mysqli_fetch_assoc($querys);
 		</div>
 	</div>
 
-	
+
 
 		<div id="hotel-facilities">
 		<div class="container">
@@ -289,66 +289,66 @@ $row3= mysqli_fetch_assoc($querys);
 				<table class="table table-striped" id="myTable">
                                 <thead>
                                    <tr role="row">
-                                    <div class="col-sm-3"> 
+                                    <div class="col-sm-3">
                                         <th class="sorting" >ID</th>
                                     </div>
-                                     <div class="col-sm-3"> 
-                                        <th class="sorting" >Type</th> 
+                                     <div class="col-sm-3">
+                                        <th class="sorting" >Type</th>
                                     </div>
-                                     <div class="col-sm-5"> 
+                                     <div class="col-sm-5">
                                         <th class="sorting"  >Money</th>
                                     </div>
-                                           
-                                     <div class="col-sm-3"> 
-                                        <th class="sorting" >Date</th> 
-                                    </div>  
-                                         <div class="col-sm-3"> 
+
+                                     <div class="col-sm-3">
+                                        <th class="sorting" >Date</th>
+                                    </div>
+                                         <div class="col-sm-3">
                                         <th class="sorting">Tool</th>
                                          </div>
-                                 
-                  
+
+
                     </thead>
                         <?php
     			$i=1;
                          while ($row= mysqli_fetch_assoc($query)){
 
-                       ?>         
-                           
+                       ?>
+
                             </div>
-                                 <div class="row"> 
+                                 <div class="row">
                                      <td><?php echo $i?></td>
                             </div>
-                              <div class="row"> 
+                              <div class="row">
                                     <td><?php if ($row['type'] == '1') {
-                                      echo "รายจ่ายทั่วไป";                                   
+                                      echo "รายรับทั่วไป";
                                     }else if ($row['type'] == '2') {
-                                      echo "ค่าอาหาร-เครื่องดื่ม";                                   
+                                      echo "ค่าอาหาร-เครื่องดื่ม";
                                     }else if ($row['type'] == '3') {
-                                      echo "สิ้นค้าจิปาถะ";                                   
+                                      echo "สิ้นค้าจิปาถะ";
                                     } ?></td>
                             </div>
-                                 <div class="row"> 
+                                 <div class="row">
                                 <td id="eio"><?php echo $row['money']?></td>
                             </div>
-                              
-                            <div class="row"> 
+
+                            <div class="row">
                                 <td id="eio"><?php echo $row['date']?></td>
                             </div>
-                                 
-                            <div class="row"> 
+
+                            <div class="row">
                             <td><a class="btn btn-danger btn-sm" href="do_delete.php?id=<?=$row['id']?>" onclick="return confirm('Are you sure to delete this item?')">
                                     <i class="fa fa-fw fa-trash"></i> ลบข้อมูล</a>
                              </td>
                              </div>
-     
-                                        
+
+
                          </tr>
-                                
-                  <?php   
-                  $i++; 
+
+                  <?php
+                  $i++;
                          }
                         ?>
-                </table> 
+                </table>
 				</div>
 			</div>
 		</div>
@@ -367,73 +367,73 @@ $row3= mysqli_fetch_assoc($querys);
 				<table class="table table-striped" id="myTable1">
                                 <thead>
                                    <tr role="row">
-                                    <div class="col-sm-3"> 
+                                    <div class="col-sm-3">
                                         <th class="sorting" >ID</th>
                                     </div>
-                                    <div class="col-sm-3"> 
-                                        <th class="sorting" >Type</th> 
-                                    </div>   
-                                     <div class="col-sm-5"> 
+                                    <div class="col-sm-3">
+                                        <th class="sorting" >Type</th>
+                                    </div>
+                                     <div class="col-sm-5">
                                         <th class="sorting"  >Money</th>
                                     </div>
-                                         
-                                    <div class="col-sm-3"> 
-                                        <th class="sorting" >Date</th> 
+
+                                    <div class="col-sm-3">
+                                        <th class="sorting" >Date</th>
                                     </div>
-                                         <div class="col-sm-3"> 
+                                         <div class="col-sm-3">
                                         <th class="sorting">Tool</th>
                                          </div>
-                                 
-                  
+
+
                     </thead>
                         <?php
     $i=1;
                          while ($row= mysqli_fetch_assoc($query1)){
-                       ?>         
-                           
+                       ?>
+
                             </div>
-                                 <div class="row"> 
+                                 <div class="row">
                                      <td><?php echo $i ?></td>
                             </div>
-                            <div class="row"> 
+                            <div class="row">
                                     <td><?php if ($row['type'] == '1') {
-                                      echo "รายจ่ายทั่วไป";                                   
+                                      echo "รายจ่ายทั่วไป";
                                     }else if ($row['type'] == '2') {
-                                      echo "ค่าอาหาร-เครื่องดื่ม";                                   
+                                      echo "ค่าอาหาร-เครื่องดื่ม";
                                     }else if ($row['type'] == '3') {
-                                      echo "สิ้นค้าจิปาถะ";                                   
+                                      echo "สิ้นค้าจิปาถะ";
                                     } ?></td>
                             </div>
-                                 <div class="row"> 
+                                 <div class="row">
                                 <td id="eio"><?php echo $row['money']?></td>
                             </div>
-                                
-                            <div class="row"> 
+
+                            <div class="row">
                                 <td id="eio"><?php echo $row['date']?></td>
                             </div>
-                                 
-                            <div class="row"> 
+
+                            <div class="row">
                             <td><a class="btn btn-danger btn-sm" href="do_deleteOut.php?id=<?=$row['id']?>" onclick="return confirm('Are you sure to delete this item?')">
                                     <i class="fa fa-fw fa-trash"></i> ลบข้อมูล</a>
                              </td>
                              </div>
-     
-                                        
+
+
                          </tr>
-                                
-                  <?php  
-                  $i++;  
+
+                  <?php
+                  $i++;
                          }
                         ?>
-                </table> 
+                </table>
 				</div>
 			</div>
 		</div>
-					
-					
-					
 
-	
+
+
+
+
 
 
 	<div id="fh5co-blog-section">
@@ -567,7 +567,7 @@ $row3= mysqli_fetch_assoc($querys);
 
 	</div>
 	<!-- END fh5co-wrapper -->
-	
+
 	<!-- Javascripts -->
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<!-- Dropdown Menu -->
